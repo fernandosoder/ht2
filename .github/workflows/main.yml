@@ -9,3 +9,9 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: cd ~/ht2 ; git stash ; git pull origin main
+
+on:
+  push:
+    branches:
+      - main
+      - 'releases/**'
