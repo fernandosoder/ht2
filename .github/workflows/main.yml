@@ -8,4 +8,4 @@ jobs:
     name: Pull
     runs-on: self-hosted
     steps:
-      - run: cd ~/ht2 ; git stash ; git pull origin main ; cd wshtp/build ;
+      - run: cd ~/ht2 ; git stash ; git pull origin main ; cd ~/ht2/wshtp/build ; qmake ../*.pro ; make ; ./wshtp
